@@ -6,7 +6,7 @@ $(document).ready(function(){
         nextArrow: '<button type="button" class="slick-next"><img src="/icons/right.svg"></button>',
         responsive: [
             {
-                breakpoint: 992,
+                breakpoint: 768,
                 settings: {
                     dots: true,
                     arrow: false
@@ -15,3 +15,12 @@ $(document).ready(function(){
         ]
       });
   });
+
+document.querySelector('.prev').addEventListener('click', function () {
+    slider.goTo("prev");
+});
+
+document.querySelector('.next').addEventListener('click', function () {
+    slider.goTo("next");
+});
+  
